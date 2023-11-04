@@ -1,0 +1,41 @@
+body {
+    background-color: #d43348;
+}
+
+h1 {
+    color: #f0e2e2;
+    display: block;
+    margin: 3.5vh;
+    margin-top: 15vh;
+    text-align: center;
+    font-size: 6vh;
+}
+
+.btn {
+    display: flex;
+    gap: 4vh;
+    margin: 3vh;
+    justify-content: center;
+}
+
+button {
+    padding: 2vh 5vh;
+    border-radius: 1vh;
+    border: none;
+    background-color: #f0e2e2;
+    color: #d43348;
+    font-weight: 1000;
+    font-size: 2vh;
+}
+
+#sim {
+    display: flexbox;
+    gap: 4vh;
+}
+
+IMG {
+    border-radius: 2vh;
+    margin: 2vh;
+    max-width: 15vh;
+
+}
