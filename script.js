@@ -29,11 +29,3 @@ function Random(btn) {
     btn.style.top = telaW + "vh";
     btn.style.left = telaH + "vh";
 }
-
-function Cuidado() {
-    var img = document.createElement("IMG");
-    img.src = "error.gif";
-    setTimeout(() => {
-        document.getElementById('novaDiv').appendChild(img);
-    }, 500);
-}
