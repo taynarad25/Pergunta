@@ -18,7 +18,7 @@ function Random(btn) {
     var rand2 = Math.random()
     var telaW = window.screen.width
     var telaH = window.screen.height
-    if(telaH > 400){
+    if(telaW > 400){
         telaW = (telaW * rand1) / 15
         telaH = (telaH * rand2) / 4
     }else {
