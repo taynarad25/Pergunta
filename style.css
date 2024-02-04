@@ -45,3 +45,14 @@ IMG {
     max-width: 15vh;
 
 }
+
+@media screen and (max-width:1050px){
+    h1 {
+        font-size: 4vh;
+    }
+    .btn {
+        gap: 2vh;
+        margin: 1vh;
+        margin-bottom: 6vh;
+    }
+}

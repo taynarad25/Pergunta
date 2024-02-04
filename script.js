@@ -14,18 +14,35 @@ function Limpar() {
 }
 
 function Random(btn) {
+    AbrirPopUp();
     var rand1 = Math.random()
     var rand2 = Math.random()
     var telaW = window.screen.width
     var telaH = window.screen.height
-    if(telaW < 800){
-        telaW = (telaW * rand1) / 15
-        telaH = (telaH * rand2) / 4
-    }else {
-        telaW = (telaW * rand1) / 4
-        telaH = (telaH * rand2) / 15
+    if(telaW > 1050){
+        telaW = (telaW * rand1) / 15;
+        telaH = (telaH * rand2) / 5;
+    }else if(telaW > 720 && telaW < 1050) {
+        telaW = (telaW * rand1) / 5;
+        telaH = (telaH * rand2) / 14;
+    }else{
+        telaW = (telaW * rand1) / 5;
+        telaH = (telaH * rand2) / 20;
     }
     btn.style.position = "absolute";
     btn.style.top = telaW + "vh";
     btn.style.left = telaH + "vh";
+}
+
+function AbrirPopUp(){
+    varWindow = window.open (
+    'popup.html',
+    'pagina',
+    "popup=yes, width=350, height=255, top=100, left=110, scrollbars=no" );
+    setTimeout(() => {
+        FecharPopup(varWindow);
+    }, 2000);
+}
+function FecharPopup(varWindow){
+    fecharWindow = varWindow.close()
 }
