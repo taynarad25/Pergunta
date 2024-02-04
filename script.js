@@ -1,8 +1,13 @@
 function Aceitar() {
     var img = document.createElement("IMG");
+    var h2 = document.createElement("h2");
     img.src = "amor.gif";
+    var text = document.createTextNode("Te amo ♥");
+    var div = document.getElementById("novaDiv");
+    h2.appendChild(text);
     setTimeout(() => {
-        document.getElementById('novaDiv').appendChild(img);
+       document.getElementById('novaDiv').appendChild(img);
+       document.getElementById('novaDiv').appendChild(h2);
     }, 500);
 }
 
