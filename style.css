@@ -1,6 +1,8 @@
 body {
     background-color: #d43348;
     background-image: url("coracao.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 h1 {
