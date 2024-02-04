@@ -3,7 +3,6 @@ function Aceitar() {
     var h2 = document.createElement("h2");
     img.src = "amor.gif";
     var text = document.createTextNode("Te amo ♥");
-    var div = document.getElementById("novaDiv");
     h2.appendChild(text);
     setTimeout(() => {
        document.getElementById('novaDiv').appendChild(img);
