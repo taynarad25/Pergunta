@@ -1,5 +1,6 @@
 body {
     background-color: #d43348;
+    margin: 0vh 30vh;
 }
 
 h1 {
@@ -15,6 +16,7 @@ h1 {
     display: flex;
     gap: 4vh;
     margin: 3vh;
+    margin-bottom: 8vh;
     justify-content: center;
 }
 
@@ -28,9 +30,10 @@ button {
     font-size: 2vh;
 }
 
-#sim {
-    display: flexbox;
-    gap: 4vh;
+#novaDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 IMG {

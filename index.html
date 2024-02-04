@@ -12,10 +12,10 @@
 <body>
     <h1>Você aceita me dar muitos beijos?</h1>
     <div class="btn">
-        <button type="button" onclick="Beijos()">Sim</button>
-        <button type="button" onclick="Reset()">Não</button>
+        <button type="button" onclick="Limpar(), Beijos()">Sim</button>
+        <button type="button" onMouseOver="Limpar(), Reset(this)">Não</button>
     </div>
-    <div id="sim"></div>
+    <div id="novaDiv"></div>
 </body>
 
 </html>
