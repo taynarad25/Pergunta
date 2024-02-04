@@ -18,11 +18,11 @@ function Random(btn) {
     var rand2 = Math.random()
     var telaW = window.screen.width
     var telaH = window.screen.height
-    if(telaW < 700){
+    if(telaW < 800){
         telaW = (telaW * rand1) / 15
         telaH = (telaH * rand2) / 4
     }else {
-        telaW = (telaW * rand1) / 5
+        telaW = (telaW * rand1) / 4
         telaH = (telaH * rand2) / 15
     }
     btn.style.position = "absolute";
