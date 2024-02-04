@@ -13,36 +13,41 @@ function Limpar() {
     }
 }
 
-function Random(btn) {
+function NaoAceitar(btn) {
     AbrirPopUp();
-    var rand1 = Math.random()
-    var rand2 = Math.random()
-    var telaW = window.screen.width
-    var telaH = window.screen.height
-    if(telaW > 1050){
-        telaW = (telaW * rand1) / 15;
-        telaH = (telaH * rand2) / 5;
-    }else if(telaW > 720 && telaW < 1050) {
-        telaW = (telaW * rand1) / 5;
-        telaH = (telaH * rand2) / 14;
-    }else{
-        telaW = (telaW * rand1) / 5;
-        telaH = (telaH * rand2) / 20;
-    }
+    tela = Random()
     btn.style.position = "absolute";
-    btn.style.top = telaW + "vh";
-    btn.style.left = telaH + "vh";
+    btn.style.top = tela[0] + "vh";
+    btn.style.left = tela[1] + "vh";
+}
+
+function Random(){
+    var rand = [Math.random(), Math.random()];
+    var tela = [window.screen.width, window.screen.height];
+    if(tela[0] > 1050){
+        tela[0] = (tela[0] * rand[0]) / 15;
+        tela[1] = (tela[1] * rand[1]) / 4;
+    }else if(tela[0] > 720 && tela[0] < 1050) {
+        tela[0] = (tela[0] * rand[0]) / 5;
+        tela[1] = (tela[1] * rand[1]) / 14;
+    }else{
+        tela[0] = (tela[0] * rand[0]) / 5;
+        tela[1] = (tela[1] * rand[1]) / 20;
+    }
+    return tela;
 }
 
 function AbrirPopUp(){
+    tela = Random()
     varWindow = window.open (
     'popup.html',
     'pagina',
-    "popup=yes, width=350, height=255, top=100, left=110, scrollbars=no" );
+    "popup=yes, width=300, height=250, scrollbars=no" );
     setTimeout(() => {
         FecharPopup(varWindow);
-    }, 2000);
+    }, 1000);
 }
+
 function FecharPopup(varWindow){
     fecharWindow = varWindow.close()
 }
